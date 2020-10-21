@@ -21,8 +21,10 @@ public class Home extends AppCompatActivity {
         lessonbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this,Lessons.class);
+                Intent intent = new Intent(Home.this, FragmentDisplay.class);
                 startActivity(intent);
+
+                //Toast.makeText(Home.this, "Pressed!", Toast.LENGTH_SHORT).show();
             }
         });
 
