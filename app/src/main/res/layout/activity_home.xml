@@ -26,41 +26,48 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/group_9"
-        tools:layout_editor_absoluteX="-72dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/group_9" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLesson"
         android:layout_width="227dp"
         android:layout_height="90dp"
         android:background="@drawable/roundbtn"
         android:text="Lessons"
         android:textSize="41sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="92dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonFingeringChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonFingeringChart"
         android:layout_width="227dp"
         android:layout_height="90dp"
         android:background="@drawable/roundbtn"
         android:text="Findering Chart"
-        android:textSize="41sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:layout_editor_absoluteX="92dp" />
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSampleSongs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLesson" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonSampleSongs"
         android:layout_width="227dp"
         android:layout_height="90dp"
         android:background="@drawable/roundbtn"
         android:text="Sample Songs"
-        android:textSize="41sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:layout_editor_absoluteX="92dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFingeringChart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
