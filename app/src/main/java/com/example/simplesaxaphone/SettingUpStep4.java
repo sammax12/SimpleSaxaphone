@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SettingUpStep2 extends AppCompatActivity {
+public class SettingUpStep4 extends AppCompatActivity {
     private Button continueBtn, menubtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_setting_up_step2 );
+        setContentView( R.layout.activity_setting_up_step4 );
         continueBtn = (Button) findViewById( R.id.continueBtn );
         continueBtn.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( SettingUpStep2.this, SettingUpStep3.class );
+                Intent intent = new Intent( SettingUpStep4.this, SettingUpStep5.class );
                 startActivity( intent );
             }
         } );
@@ -26,7 +26,7 @@ public class SettingUpStep2 extends AppCompatActivity {
         menubtn.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( SettingUpStep2.this, Home.class );
+                Intent intent = new Intent( SettingUpStep4.this, Home.class );
                 startActivity( intent );
             }
         } );
