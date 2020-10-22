@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentDisplay"></activity>
+        <activity android:name=".LessonsMenu"></activity>
+        <activity android:name=".FragmentDisplay" />
         <activity android:name=".Home" />
         <activity android:name=".MainActivity">
             <intent-filter>
