@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class LessonsMenu extends AppCompatActivity {
-    private Button settingUp, posture, firstNote, maintain, readingMusic;
+    private Button settingUp, posture, firstNote, maintain, readingMusic, menubtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +17,7 @@ public class LessonsMenu extends AppCompatActivity {
         settingUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
+                Intent intent = new Intent(LessonsMenu.this, SettingUpStep1.class);
                 startActivity(intent);
             }
         });
@@ -50,6 +50,14 @@ public class LessonsMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
+                startActivity(intent);
+            }
+        });
+        menubtn = (Button) findViewById(R.id.menubtn);
+        menubtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LessonsMenu.this, Home.class);
                 startActivity(intent);
             }
         });
