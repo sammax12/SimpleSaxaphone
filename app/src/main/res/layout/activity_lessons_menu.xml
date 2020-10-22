@@ -36,14 +36,25 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
+        android:id="@+id/firstNote"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="@drawable/roundbtn"
+        android:text="First Note"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/readingMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintain" />
+
+    <Button
         android:id="@+id/settingUp"
         android:layout_width="277dp"
         android:layout_height="71dp"
-        android:layout_marginTop="71dp"
         android:background="@drawable/roundbtn"
         android:text="Setting Up"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/posture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
@@ -55,34 +66,10 @@
         android:background="@drawable/roundbtn"
         android:text="Posture"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/FirstNote"
+        app:layout_constraintBottom_toTopOf="@+id/maintain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SettingUp" />
-
-    <Button
-        android:id="@+id/firstNote"
-        android:layout_width="277dp"
-        android:layout_height="71dp"
-        android:background="@drawable/roundbtn"
-        android:text="First Note"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/Maintain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Posture" />
-
-    <Button
-        android:id="@+id/maintain"
-        android:layout_width="277dp"
-        android:layout_height="71dp"
-        android:background="@drawable/roundbtn"
-        android:text="Maintaining"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/ReadingMusic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FirstNote" />
+        app:layout_constraintTop_toBottomOf="@+id/settingUp" />
 
     <Button
         android:id="@+id/readingMusic"
@@ -94,14 +81,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Maintain" />
+        app:layout_constraintTop_toBottomOf="@+id/firstNote" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/musicnotes"
-        tools:layout_editor_absoluteX="93dp" />
+    <Button
+        android:id="@+id/maintain"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="@drawable/roundbtn"
+        android:text="Maintaining"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posture" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
