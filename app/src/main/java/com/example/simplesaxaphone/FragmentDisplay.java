@@ -50,4 +50,15 @@ public class FragmentDisplay extends AppCompatActivity {
 
         mViewPager.setCurrentItem(fragmentNumber);
     }
+
+    @Override
+    public void onBackPressed(){
+        if(mViewPager.getCurrentItem() == 0){
+            super.onBackPressed();
+        }
+        else {
+            mViewPager.setCurrentItem(mViewPager.getCurrentItem()-1);
+        }
+    }
+
 }

@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/roundbtn"
         android:text="Menu"
+        android:textAllCaps="false"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
