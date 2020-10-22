@@ -20,8 +20,8 @@ public class Test extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_test, container, false);
-        contbtn = (Button) view.findViewById(R.id.contbtn);
 
+        contbtn = (Button) view.findViewById(R.id.contbtn);
         contbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

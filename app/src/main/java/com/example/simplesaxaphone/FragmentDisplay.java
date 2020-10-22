@@ -12,8 +12,8 @@ import android.widget.Button;
 
 public class FragmentDisplay extends AppCompatActivity {
 
-    private SectionsStatePageAdapter mSectionsStatePageAdapter;
-    private ViewPager mViewPager;
+    private SectionsStatePageAdapter adapter = new SectionsStatePageAdapter(getSupportFragmentManager());;
+    private ViewPager fragViewPager;
     private Button menubtn;
 
     @Override
@@ -25,29 +25,53 @@ public class FragmentDisplay extends AppCompatActivity {
         menubtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FragmentDisplay.this, MainActivity.class);
+                Intent intent = new Intent(FragmentDisplay.this, Home.class);
                 startActivity(intent);
+                adapter.removeAllContianInList();
             }
         });
 
-
         //Fragment Stuff
-        mSectionsStatePageAdapter= new SectionsStatePageAdapter(getSupportFragmentManager());
 
-        mViewPager = (ViewPager) findViewById(R.id.fragmentContainer);
+        fragViewPager = (ViewPager) findViewById(R.id.fragmentContainer);
 
-        setupViewPager(mViewPager);
+        String data = getIntent().getExtras().getString("id");
+
+        distinguishFragmentSection(data);
+    }
+    private void distinguishFragmentSection(String fragmentSection)
+    {
+        switch (fragmentSection){
+            case "lessonFragmentSection":
+                setupViewPagerLesson(fragViewPager);
+                break;
+            case "fingerFragmentSection":
+                setupViewPagerFinger(fragViewPager);
+                break;
+            case "singerFragmentSection":
+                setupViewPagerSong(fragViewPager);
+                break;
+        }
     }
 
-    private void setupViewPager(ViewPager viewPager){
-        SectionsStatePageAdapter adapter = new SectionsStatePageAdapter(getSupportFragmentManager());
+    private void setupViewPagerLesson(ViewPager viewPager){
         adapter.addFragment(new Test(),"Test");
         adapter.addFragment(new test2(), "test2");
         viewPager.setAdapter(adapter);
     }
 
-    public void setViewPager(int fragmentNumber){
+    private void setupViewPagerFinger(ViewPager viewPager){
+        adapter.addFragment(new Test3(), "test3");
+        viewPager.setAdapter(adapter);
+    }
 
-        mViewPager.setCurrentItem(fragmentNumber);
+    private void setupViewPagerSong(ViewPager viewPager)
+    {
+        adapter.addFragment(new Test4(), "test4");
+        viewPager.setAdapter(adapter);
+    }
+
+    public void setViewPager(int fragmentNumber){
+        fragViewPager.setCurrentItem(fragmentNumber);
     }
 }

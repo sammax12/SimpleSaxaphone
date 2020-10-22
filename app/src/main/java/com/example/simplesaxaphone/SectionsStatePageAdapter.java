@@ -32,4 +32,9 @@ public class SectionsStatePageAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return mFragmentList.size();
     }
+
+    public void removeAllContianInList()
+    {
+        mFragmentList.removeAll(mFragmentList);
+    }
 }
