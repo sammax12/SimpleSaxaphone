@@ -41,8 +41,7 @@ public class FragmentDisplay extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager){
         SectionsStatePageAdapter adapter = new SectionsStatePageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Test(),"Test");
-        adapter.addFragment(new test2(), "test2");
+        adapter.addFragment(new FingerChart1(),"FingerChart1");
         viewPager.setAdapter(adapter);
     }
 

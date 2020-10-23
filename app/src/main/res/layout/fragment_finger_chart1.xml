@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#999999"
     tools:context=".FingerChart1"
-    android:background="#999999">
+    tools:layout_editor_absoluteX="-25dp"
+    tools:layout_editor_absoluteY="34dp">
 
 
     <ImageView
@@ -13,158 +15,112 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
         android:src="@drawable/chart1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/C_btn"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginBottom="61dp"
-        android:text="C" />
-    <Button
-        android:id="@+id/Csharp_btn"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginBottom="61dp"
-        android:text="C#" />
-    <Button
-        android:id="@+id/D_btn"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginBottom="61dp"
-        android:text="D" />
-
-    <Button
-        android:id="@+id/Dsharp_btn"
-        android:layout_width="46dp"
-        android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="D#"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="557dp" />
-
-    <Button
-        android:id="@+id/E_btn"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:text="E"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="564dp" />
-
-    <Button
-        android:id="@+id/Fsharp_btn"
-        android:layout_width="43dp"
-        android:layout_height="49dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="F#"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="564dp" />
-
-    <Button
-        android:id="@+id/Asharp_btn"
-        android:layout_width="43dp"
-        android:layout_height="34dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="A#"
-        tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="573dp" />
-
-    <Button
-        android:id="@+id/Chigh_btn"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="C high"
-        tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="437dp" />
-
-    <Button
-        android:id="@+id/A_btn"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="A"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="504dp" />
-
-    <Button
-        android:id="@+id/Gsharp_btn"
-        android:layout_width="43dp"
-        android:layout_height="54dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="G#"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="552dp" />
-
-    <Button
-        android:id="@+id/G_btn"
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="G "
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="645dp" />
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="625dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/B_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="B"
-        tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="576dp" />
+        <Button
+            android:id="@+id/C_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/F_btn"
-        android:layout_width="38dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="F"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="565dp" />
+        <Button
+            android:id="@+id/Csharp_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="C#"
+            android:textSize="12sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/D_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Dsharp_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="D#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/E_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/F_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Fsharp_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="F#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/G_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/Gsharp_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="G#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/A_btn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Asharp_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="A#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/B_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
