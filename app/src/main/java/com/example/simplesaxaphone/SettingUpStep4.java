@@ -1,34 +1,27 @@
 package com.example.simplesaxaphone;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
-public class SettingUpStep4 extends AppCompatActivity {
-    private Button continueBtn, menubtn;
-
+public class SettingUpStep4 extends Fragment {
+    private Button continueBtn;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_setting_up_step4 );
-        continueBtn = (Button) findViewById( R.id.continueBtn );
-        continueBtn.setOnClickListener( new View.OnClickListener() {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate( R.layout.fragment_setting_up_step4, container, false);
+        continueBtn = (Button) view.findViewById(R.id.continueBtn);
+        continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( SettingUpStep4.this, SettingUpStep5.class );
-                startActivity( intent );
+                ((FragmentDisplay) getActivity()).setViewPager( 4 );
             }
-        } );
-        menubtn = (Button) findViewById( R.id.menubtn );
-        menubtn.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent( SettingUpStep4.this, Home.class );
-                startActivity( intent );
-            }
-        } );
+        });
+        return view;
     }
 }

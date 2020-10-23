@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingUpStep4"
+    tools:context=".SettingUpStep6"
     android:background="#999999">
-
-    <Button
-        android:id="@+id/menubtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/roundbtn"
-        android:text="Menu"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/continueBtn"
         android:layout_width="176dp"
         android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/roundbtn"
         android:text="Continue"
         android:textSize="30sp"
@@ -35,13 +27,15 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <ImageView
-        android:id="@+id/setUp4"
-        android:layout_width="324dp"
-        android:layout_height="613dp"
+        android:id="@+id/setUp6"
+        android:layout_width="282dp"
+        android:layout_height="525dp"
+        android:layout_centerInParent="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/settingupstep4" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.457"
+        app:srcCompat="@drawable/settingupstep6" />
+</RelativeLayout>
