@@ -11,12 +11,12 @@ import android.widget.Button;
 
 public class Posture4 extends Fragment {
 
-    private Button continueBtn;
+    private Button finishBtn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.fragment_posture4, container, false);
-        continueBtn = (Button) view.findViewById(R.id.continueBtn);
-        continueBtn.setOnClickListener(new View.OnClickListener() {
+        finishBtn = (Button) view.findViewById(R.id.finishBtn);
+        finishBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ((FragmentDisplay) getActivity()).setViewPager( 4 );

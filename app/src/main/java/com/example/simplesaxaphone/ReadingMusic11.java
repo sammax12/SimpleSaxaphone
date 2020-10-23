@@ -9,17 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class Maintaining4 extends Fragment {
-
-    private Button finishBtn;
+public class ReadingMusic11 extends Fragment {
+    private Button continueBtn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate( R.layout.fragment_maintaining4, container, false);
-        finishBtn = (Button) view.findViewById(R.id.finishBtn);
-        finishBtn.setOnClickListener(new View.OnClickListener() {
+        View view = inflater.inflate( R.layout.fragment_reading_music11, container, false);
+        continueBtn = (Button) view.findViewById(R.id.continueBtn);
+        continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentDisplay) getActivity()).setViewPager( 4 );
+                ((FragmentDisplay) getActivity()).setViewPager( 11 );
             }
         });
         return view;
