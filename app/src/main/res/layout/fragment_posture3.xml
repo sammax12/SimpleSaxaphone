@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Posture1"
+    tools:context=".Posture3"
     android:background="#999999">
 
     <ImageView
@@ -14,7 +14,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="115dp"
-        android:src="@drawable/posture1" />
+        android:src="@drawable/posture3" />
 
     <Button
         android:id="@+id/continueBtn"
