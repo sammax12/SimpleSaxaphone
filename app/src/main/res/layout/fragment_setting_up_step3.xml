@@ -28,6 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:background="@drawable/roundbtn"
+        android:textAllCaps="false"
         android:text="Continue"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

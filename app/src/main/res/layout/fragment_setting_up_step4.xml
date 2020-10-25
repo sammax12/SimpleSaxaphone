@@ -19,6 +19,7 @@
         android:layout_marginRight="115dp"
         android:layout_marginBottom="31dp"
         android:background="@drawable/roundbtn"
+        android:textAllCaps="false"
         android:text="Continue"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
