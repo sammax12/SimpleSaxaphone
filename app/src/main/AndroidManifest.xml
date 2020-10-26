@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SongMenu"></activity>
         <activity android:name=".SettingUpStep7" />
         <activity android:name=".SettingUpStep6" />
         <activity android:name=".SettingUpStep5" />
