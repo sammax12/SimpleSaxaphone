@@ -52,7 +52,7 @@
         android:layout_width="227dp"
         android:layout_height="90dp"
         android:background="@drawable/roundbtn"
-        android:text="Findering Chart"
+        android:text="Fingering Chart"
         android:textAllCaps="false"
         android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonSampleSongs"
