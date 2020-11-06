@@ -12,8 +12,9 @@ import android.widget.Button;
 
 public class FragmentDisplay extends AppCompatActivity {
 
-    private SectionsStatePageAdapter mSectionsStatePageAdapter;
+    private SectionsStatePageAdapter adapter;
     private ViewPager mViewPager;
+    private String data;
     private Button menubtn;
 
     @Override
@@ -25,29 +26,69 @@ public class FragmentDisplay extends AppCompatActivity {
         menubtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FragmentDisplay.this, MainActivity.class);
+                Intent intent = new Intent(FragmentDisplay.this, Home.class);
                 startActivity(intent);
+                adapter.removeAllContainInList();
             }
         });
 
 
         //Fragment Stuff
-        mSectionsStatePageAdapter= new SectionsStatePageAdapter(getSupportFragmentManager());
+        adapter= new SectionsStatePageAdapter(getSupportFragmentManager());
 
         mViewPager = (ViewPager) findViewById(R.id.fragmentContainer);
 
-        setupViewPager(mViewPager);
+        data = getIntent().getExtras().getString("id");
+
+        distinguishFragmentSection(data);
     }
 
-    private void setupViewPager(ViewPager viewPager){
-        SectionsStatePageAdapter adapter = new SectionsStatePageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Test(),"Test");
-        adapter.addFragment(new test2(), "test2");
+    private void distinguishFragmentSection(String fragmentSection){
+        switch(fragmentSection){
+            case "lessonFragmentSection":
+            setupViewPagerLesson(mViewPager);
+            break;
+
+            case "chartFragmentSection":
+            setupViewPagerChart(mViewPager);
+            break;
+
+            case "songsFragmentSection":
+                setupViewPagerSongs(mViewPager);
+            break;
+
+        }
+    }
+
+    private void setupViewPagerLesson(ViewPager viewPager){
+
+    }
+
+    private void setupViewPagerChart(ViewPager viewPager){
+        adapter.addFragment(new FingerChart1(),"FingerChart1");
+        adapter.addFragment(new FingerChart2(),"FingerChart2");
+        adapter.addFragment(new FingerChart13(),"FingerChart13");
+        adapter.addFragment(new FingerChart14(),"FingerChart14");
         viewPager.setAdapter(adapter);
+    }
+
+    private void setupViewPagerSongs(ViewPager viewPager){
+
     }
 
     public void setViewPager(int fragmentNumber){
 
         mViewPager.setCurrentItem(fragmentNumber);
     }
+
+    @Override
+    public void onBackPressed(){
+        if(mViewPager.getCurrentItem() == 0){
+            super.onBackPressed();
+        }
+        else {
+            mViewPager.setCurrentItem(mViewPager.getCurrentItem()-1);
+        }
+    }
+
 }
