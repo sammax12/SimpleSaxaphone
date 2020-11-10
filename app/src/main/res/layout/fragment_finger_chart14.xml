@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    tools:context=".FingerChart14"
+    tools:layout_editor_absoluteX="-25dp"
+    tools:layout_editor_absoluteY="34dp">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="185dp"
+        android:src="@drawable/chart13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="83dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backArrow_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_vector_test" />
+
+        <Button
+            android:id="@+id/C_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFD036"
+            android:padding="0dp"
+            android:text="C"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Csharp_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="C#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/D_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="D"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Dsharp_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="D#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/E_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="E"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/F_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="F"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Fsharp_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="F#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/G_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="G"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Gsharp_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="G#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/A_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="A"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Asharp_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="A#"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/B_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="B"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/C_high_btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="C"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
