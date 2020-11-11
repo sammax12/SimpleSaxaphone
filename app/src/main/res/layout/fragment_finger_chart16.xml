@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#999999"
-    tools:context=".FingerChart16"
+    tools:context="fingerChart.FingerChart16"
     tools:layout_editor_absoluteX="-25dp"
     tools:layout_editor_absoluteY="34dp">
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReadingMusic3"
+    tools:context="readingMusic.ReadingMusic3"
     android:background="#999999">
 
     <Button

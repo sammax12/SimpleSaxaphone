@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingUpStep7"
+    tools:context="settingUp.SettingUpStep7"
     android:background="#999999">
 
     <Button

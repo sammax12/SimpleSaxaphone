@@ -7,6 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import sampleSong.SampleSong1;
+import sampleSong.SampleSong2;
+import sampleSong.SampleSong3;
+import sampleSong.SampleSong4;
+import sampleSong.SampleSong5;
+
 public class SongMenu extends AppCompatActivity {
     private Button happyBirthday, Mary, star, itsyBitsySpider, wheels, menubtn;
     @Override

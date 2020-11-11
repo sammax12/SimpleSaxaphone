@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import fingerChart.*;
+import com.example.simplesaxaphone.modifiedPagerAdapter.SectionsStatePageAdapter;
+
 public class FragmentDisplay extends AppCompatActivity {
 
     private SectionsStatePageAdapter adapter;
@@ -33,7 +36,7 @@ public class FragmentDisplay extends AppCompatActivity {
 
 
         //Fragment Stuff
-        adapter= new SectionsStatePageAdapter(getSupportFragmentManager());
+        adapter = new SectionsStatePageAdapter(getSupportFragmentManager());
 
         mViewPager = (ViewPager) findViewById(R.id.fragmentContainer);
 
