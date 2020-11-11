@@ -43,10 +43,8 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, FragmentDisplay.class);
                 intent.putExtra("id", "songsFragmentSection");
-                startActivity(intent);
             }
         });
-
     }
 
 }
