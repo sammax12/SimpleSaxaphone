@@ -17,7 +17,8 @@ public class LessonsMenu extends AppCompatActivity {
         settingUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LessonsMenu.this, SettingUpStep1.class);
+                Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
+                intent.putExtra("id", "lessonFragmentSection");
                 startActivity(intent);
             }
         });
@@ -25,7 +26,7 @@ public class LessonsMenu extends AppCompatActivity {
         posture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LessonsMenu.this, Posture1.class);
+                Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
                 startActivity(intent);
             }
         });
@@ -33,7 +34,7 @@ public class LessonsMenu extends AppCompatActivity {
         firstNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LessonsMenu.this, FirstNote1.class);
+                Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +42,7 @@ public class LessonsMenu extends AppCompatActivity {
         maintain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LessonsMenu.this, Maintaining1.class);
+                Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +50,7 @@ public class LessonsMenu extends AppCompatActivity {
         readingMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LessonsMenu.this, ReadingMusic1.class);
+                Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
                 startActivity(intent);
             }
         });
