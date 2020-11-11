@@ -11,15 +11,13 @@ import java.util.List;
 public class SectionsStatePageAdapter extends FragmentStatePagerAdapter {
 
     private final List<Fragment> mFragmentList = new ArrayList<>();
-    private final List<String> mFragmentTitleList = new ArrayList<String>();
 
     public SectionsStatePageAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }
 
-    public void addFragment(Fragment fragment, String title){
+    public void addFragment(Fragment fragment){
         mFragmentList.add(fragment);
-        mFragmentTitleList.add(title);
     }
 
     @NonNull
