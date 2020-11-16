@@ -21,7 +21,7 @@ public class ReadingMusic12 extends Fragment {
         finishBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentDisplay) getActivity()).setViewPager( 12 );
+                ((FragmentDisplay) getActivity()).finish();
             }
         });
         return view;

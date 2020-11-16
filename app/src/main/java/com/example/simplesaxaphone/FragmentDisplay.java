@@ -137,7 +137,7 @@ public class FragmentDisplay extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-    private void lessonFragmentPosture(ViewPager viewPager){
+    private void lessonFragmentPosture(ViewPager viewPager) {
         adapter.addFragment(new Posture1());
         adapter.addFragment(new Posture2());
         adapter.addFragment(new Posture3());
@@ -145,15 +145,15 @@ public class FragmentDisplay extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-    private void lessonFragmentFirstNote(ViewPager viewPager){
+    private void lessonFragmentFirstNote(ViewPager viewPager) {
         adapter.addFragment(new FirstNote1());
         adapter.addFragment(new FirstNote2());
         viewPager.setAdapter(adapter);
     }
 
     private void lessonFragmentMaintain(ViewPager viewPager) {
-        //adapter.addFragment(new Maintaining1());
-       // adapter.addFragment(new Maintaining2());
+        adapter.addFragment(new Maintaining1());
+        adapter.addFragment(new Maintaining2());
         adapter.addFragment(new Maintaining3());
         adapter.addFragment(new Maintaining4());
         viewPager.setAdapter(adapter);
@@ -173,5 +173,12 @@ public class FragmentDisplay extends AppCompatActivity {
         adapter.addFragment(new ReadingMusic11());
         adapter.addFragment(new ReadingMusic12());
         viewPager.setAdapter(adapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mViewPager.getCurrentItem() != 0) {
+            mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1);
+        }
     }
 }

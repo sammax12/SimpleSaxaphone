@@ -16,7 +16,7 @@
         android:src="@drawable/maintaining4" />
 
     <Button
-        android:id="@+id/finishBtnBtn"
+        android:id="@+id/finishBtn"
         android:layout_width="176dp"
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"

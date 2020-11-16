@@ -22,7 +22,7 @@ public class SettingUpStep7 extends Fragment {
         finishBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentDisplay) getActivity()).setViewPager( 7 );
+                ((FragmentDisplay) getActivity()).finish();
             }
         });
         return view;

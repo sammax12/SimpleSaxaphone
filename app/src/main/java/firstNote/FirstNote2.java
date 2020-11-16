@@ -22,7 +22,7 @@ public class FirstNote2 extends Fragment {
         finishBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((FragmentDisplay) getActivity()).setViewPager( 2 );
+                ((FragmentDisplay) getActivity()).finish();
             }
         });
         return view;
