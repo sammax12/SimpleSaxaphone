@@ -1,4 +1,4 @@
-package com.example.simplesaxaphone.modifiedPagerAdapter;
+package com.example.simplesaxaphone;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

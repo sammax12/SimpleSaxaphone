@@ -9,7 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 import fingerChart.*;
-import com.example.simplesaxaphone.modifiedPagerAdapter.SectionsStatePageAdapter;
+import firstNote.*;
+import mainTaining.*;
+import posture.*;
+import readingMusic.*;
+import sampleSong.*;
+import settingUp.*;
 
 public class FragmentDisplay extends AppCompatActivity {
 
@@ -45,28 +50,55 @@ public class FragmentDisplay extends AppCompatActivity {
         distinguishFragmentSection(data);
     }
 
-    private void distinguishFragmentSection(String fragmentSection){
-        switch(fragmentSection){
-            case "lessonFragmentSection":
-            setupViewPagerLesson(mViewPager);
-            break;
+    public void setViewPager(int fragmentNumber) {
+        mViewPager.setCurrentItem(fragmentNumber);
+    }
+
+    protected void distinguishFragmentSection(String fragmentSection) {
+        switch (fragmentSection) {
+            case "lessonFragmentSettingUp":
+                lessonFragmentSettingUp(mViewPager);
+                break;
 
             case "chartFragmentSection":
-            setupViewPagerChart(mViewPager);
-            break;
+                setupViewPagerChart(mViewPager);
+                break;
 
             case "songsFragmentSection":
                 setupViewPagerSongs(mViewPager);
-            break;
+                break;
+
+            case "lessonFragmentPosture":
+                lessonFragmentPosture(mViewPager);
+                break;
+
+            case "lessonFragmentFirstNote":
+                lessonFragmentFirstNote(mViewPager);
+                break;
+
+            case "lessonFragmentMaintain":
+                lessonFragmentMaintain(mViewPager);
+                break;
+
+            case "lessonFragmentReadingMusic":
+                lessonFragmentReadingMusic(mViewPager);
+                break;
 
         }
     }
 
-    private void setupViewPagerLesson(ViewPager viewPager){
-
+    private void lessonFragmentSettingUp(ViewPager viewPager) {
+        adapter.addFragment(new SettingUpStep1());
+        adapter.addFragment(new SettingUpStep2());
+        adapter.addFragment(new SettingUpStep3());
+        adapter.addFragment(new SettingUpStep4());
+        adapter.addFragment(new SettingUpStep5());
+        adapter.addFragment(new SettingUpStep6());
+        adapter.addFragment(new SettingUpStep7());
+        viewPager.setAdapter(adapter);
     }
 
-    private void setupViewPagerChart(ViewPager viewPager){
+    private void setupViewPagerChart(ViewPager viewPager) {
         adapter.addFragment(new FingerChart1());
         adapter.addFragment(new FingerChart2());
         adapter.addFragment(new FingerChart3());
@@ -96,21 +128,50 @@ public class FragmentDisplay extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-    private void setupViewPagerSongs(ViewPager viewPager){
+    private void setupViewPagerSongs(ViewPager viewPager) {
+        adapter.addFragment(new SampleSong1());
+        adapter.addFragment(new SampleSong2());
+        adapter.addFragment(new SampleSong3());
+        adapter.addFragment(new SampleSong4());
+        adapter.addFragment(new SampleSong5());
+        viewPager.setAdapter(adapter);
     }
 
-    public void setViewPager(int fragmentNumber){
-        mViewPager.setCurrentItem(fragmentNumber);
+    private void lessonFragmentPosture(ViewPager viewPager){
+        adapter.addFragment(new Posture1());
+        adapter.addFragment(new Posture2());
+        adapter.addFragment(new Posture3());
+        adapter.addFragment(new Posture4());
+        viewPager.setAdapter(adapter);
     }
 
-    @Override
-    public void onBackPressed(){
-        if(mViewPager.getCurrentItem() == 0){
-            super.onBackPressed();
-        }
-        else {
-            mViewPager.setCurrentItem(mViewPager.getCurrentItem()-1);
-        }
+    private void lessonFragmentFirstNote(ViewPager viewPager){
+        adapter.addFragment(new FirstNote1());
+        adapter.addFragment(new FirstNote2());
+        viewPager.setAdapter(adapter);
     }
 
+    private void lessonFragmentMaintain(ViewPager viewPager) {
+        //adapter.addFragment(new Maintaining1());
+       // adapter.addFragment(new Maintaining2());
+        adapter.addFragment(new Maintaining3());
+        adapter.addFragment(new Maintaining4());
+        viewPager.setAdapter(adapter);
+    }
+
+    private void lessonFragmentReadingMusic(ViewPager viewPager) {
+        adapter.addFragment(new ReadingMusic1());
+        adapter.addFragment(new ReadingMusic2());
+        adapter.addFragment(new ReadingMusic3());
+        adapter.addFragment(new ReadingMusic4());
+        adapter.addFragment(new ReadingMusic5());
+        adapter.addFragment(new ReadingMusic6());
+        adapter.addFragment(new ReadingMusic7());
+        adapter.addFragment(new ReadingMusic8());
+        adapter.addFragment(new ReadingMusic9());
+        adapter.addFragment(new ReadingMusic10());
+        adapter.addFragment(new ReadingMusic11());
+        adapter.addFragment(new ReadingMusic12());
+        viewPager.setAdapter(adapter);
+    }
 }
