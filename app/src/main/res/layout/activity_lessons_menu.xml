@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    tools:context=".LessonsMenu">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Lessons"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/menubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        android:textAllCaps="false"
+        android:text="Menu"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/firstNote"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="@drawable/roundbtn"
+        android:text="First Note"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/readingMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintain" />
+
+    <Button
+        android:id="@+id/settingUp"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="@drawable/roundbtn"
+        android:textAllCaps="false"
+        android:text="Setting Up"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/posture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/posture"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="@drawable/roundbtn"
+        android:text="Posture"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/maintain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingUp" />
+
+    <Button
+        android:id="@+id/readingMusic"
+        android:layout_width="282dp"
+        android:layout_height="104dp"
+        android:background="@drawable/roundbtn"
+        android:text="Reading Sheet Music"
+        android:textSize="40sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNote" />
+
+    <Button
+        android:id="@+id/maintain"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="@drawable/roundbtn"
+        android:textAllCaps="false"
+        android:text="Maintaining"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
