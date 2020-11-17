@@ -11,42 +11,42 @@
         android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
         android:text="Sample Songs"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="55sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/happyBirthday"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072" />
+        app:layout_constraintTop_toBottomOf="@+id/menubtn" />
 
     <Button
         android:id="@+id/menubtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbtn"
-        android:textAllCaps="false"
         android:text="Menu"
+        android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <Button
         android:id="@+id/happyBirthday"
         android:layout_width="277dp"
         android:layout_height="71dp"
         android:background="@drawable/roundbtn"
-        android:textAllCaps="false"
         android:text="Happy Birthday"
+        android:textAllCaps="false"
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/Mary"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
@@ -60,6 +60,7 @@
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/star"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/happyBirthday" />
 
@@ -73,6 +74,7 @@
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/itsyBitsySpider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Mary" />
 
@@ -86,18 +88,21 @@
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/wheels"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/star" />
+
     <Button
         android:id="@+id/wheels"
         android:layout_width="282dp"
         android:layout_height="104dp"
         android:background="@drawable/roundbtn"
         android:text="The Wheels on the Bus"
-        android:textSize="35dp"
         android:textAllCaps="false"
+        android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itsyBitsySpider" />
 </androidx.constraintlayout.widget.ConstraintLayout>

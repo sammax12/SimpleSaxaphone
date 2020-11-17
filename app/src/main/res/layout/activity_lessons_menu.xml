@@ -11,31 +11,30 @@
         android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
         android:text="Lessons"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/settingUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072" />
+        app:layout_constraintTop_toBottomOf="@+id/menubtn" />
 
     <Button
         android:id="@+id/menubtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbtn"
-        android:textAllCaps="false"
         android:text="Menu"
+        android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <Button
         android:id="@+id/firstNote"
@@ -47,6 +46,7 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/readingMusic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/maintain" />
 
@@ -55,11 +55,12 @@
         android:layout_width="277dp"
         android:layout_height="71dp"
         android:background="@drawable/roundbtn"
-        android:textAllCaps="false"
         android:text="Setting Up"
+        android:textAllCaps="false"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/posture"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
@@ -73,6 +74,7 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/maintain"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settingUp" />
 
@@ -82,10 +84,11 @@
         android:layout_height="104dp"
         android:background="@drawable/roundbtn"
         android:text="Reading Sheet Music"
-        android:textSize="40sp"
         android:textAllCaps="false"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstNote" />
 
@@ -94,11 +97,12 @@
         android:layout_width="277dp"
         android:layout_height="71dp"
         android:background="@drawable/roundbtn"
-        android:textAllCaps="false"
         android:text="Maintaining"
+        android:textAllCaps="false"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/firstNote"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/posture" />
 
