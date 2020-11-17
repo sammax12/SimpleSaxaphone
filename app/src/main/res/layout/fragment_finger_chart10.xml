@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#999999"
-    tools:context="fingerChart.FingerChart10"
-    tools:layout_editor_absoluteX="-25dp"
-    tools:layout_editor_absoluteY="34dp">
+    tools:context="fingerChart.FingerChart10">
 
 
     <ImageView
@@ -109,10 +107,10 @@
             android:id="@+id/A_btn"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FFD036"
             android:padding="0dp"
             android:text="A"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:backgroundTint="#FFD036"/>
 
         <Button
             android:id="@+id/Asharp_btn"
@@ -145,6 +143,7 @@
             android:layout_gravity="center"
             android:background="@drawable/abc_vector_test"
             android:rotation="900" />
+
     </LinearLayout>
 
 
