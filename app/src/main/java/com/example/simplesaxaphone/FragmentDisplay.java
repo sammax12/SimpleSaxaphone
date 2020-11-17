@@ -64,8 +64,24 @@ public class FragmentDisplay extends AppCompatActivity {
                 setupViewPagerChart(mViewPager);
                 break;
 
-            case "songsFragmentSection":
-                setupViewPagerSongs(mViewPager);
+            case "songsFragmentSection1":
+                setupViewPagerSongs1(mViewPager);
+                break;
+
+            case "songsFragmentSection2":
+                setupViewPagerSongs2(mViewPager);
+                break;
+
+            case "songsFragmentSection3":
+                setupViewPagerSongs3(mViewPager);
+                break;
+
+            case "songsFragmentSection4":
+                setupViewPagerSongs4(mViewPager);
+                break;
+
+            case "songsFragmentSection5":
+                setupViewPagerSongs5(mViewPager);
                 break;
 
             case "lessonFragmentPosture":
@@ -128,11 +144,27 @@ public class FragmentDisplay extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-    private void setupViewPagerSongs(ViewPager viewPager) {
+    private void setupViewPagerSongs1(ViewPager viewPager) {
         adapter.addFragment(new SampleSong1());
+        viewPager.setAdapter(adapter);
+    }
+
+    private void setupViewPagerSongs2(ViewPager viewPager) {
         adapter.addFragment(new SampleSong2());
+        viewPager.setAdapter(adapter);
+    }
+
+    private void setupViewPagerSongs3(ViewPager viewPager) {
         adapter.addFragment(new SampleSong3());
+        viewPager.setAdapter(adapter);
+    }
+
+    private void setupViewPagerSongs4(ViewPager viewPager) {
         adapter.addFragment(new SampleSong4());
+        viewPager.setAdapter(adapter);
+    }
+
+    private void setupViewPagerSongs5(ViewPager viewPager) {
         adapter.addFragment(new SampleSong5());
         viewPager.setAdapter(adapter);
     }
@@ -179,6 +211,9 @@ public class FragmentDisplay extends AppCompatActivity {
     public void onBackPressed() {
         if (mViewPager.getCurrentItem() != 0) {
             mViewPager.setCurrentItem(mViewPager.getCurrentItem() - 1);
+        }
+        else{
+            super.onBackPressed();
         }
     }
 }

@@ -40,8 +40,7 @@ public class Home extends AppCompatActivity {
         songsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, FragmentDisplay.class);
-                intent.putExtra("id", "songsFragmentSection");
+                Intent intent = new Intent(Home.this, SongMenu.class);
                 startActivity(intent);
             }
         });

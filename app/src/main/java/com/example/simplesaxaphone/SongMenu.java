@@ -23,7 +23,8 @@ public class SongMenu extends AppCompatActivity {
         happyBirthday.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SongMenu.this, SampleSong1.class);
+                Intent intent = new Intent(SongMenu.this, FragmentDisplay.class);
+                intent.putExtra("id", "songsFragmentSection1");
                 startActivity(intent);
             }
         });
@@ -31,7 +32,8 @@ public class SongMenu extends AppCompatActivity {
         Mary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SongMenu.this, SampleSong2.class);
+                Intent intent = new Intent(SongMenu.this, FragmentDisplay.class);
+                intent.putExtra("id", "songsFragmentSection2");
                 startActivity(intent);
             }
         });
@@ -39,7 +41,8 @@ public class SongMenu extends AppCompatActivity {
         star.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SongMenu.this, SampleSong3.class);
+                Intent intent = new Intent(SongMenu.this, FragmentDisplay.class);
+                intent.putExtra("id", "songsFragmentSection3");
                 startActivity(intent);
             }
         });
@@ -47,7 +50,8 @@ public class SongMenu extends AppCompatActivity {
         itsyBitsySpider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SongMenu.this, SampleSong4.class);
+                Intent intent = new Intent(SongMenu.this, FragmentDisplay.class);
+                intent.putExtra("id", "songsFragmentSection4");
                 startActivity(intent);
             }
         });
@@ -55,7 +59,8 @@ public class SongMenu extends AppCompatActivity {
         wheels.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SongMenu.this, SampleSong5.class);
+                Intent intent = new Intent(SongMenu.this, FragmentDisplay.class);
+                intent.putExtra("id", "songsFragmentSection5");
                 startActivity(intent);
             }
         });
