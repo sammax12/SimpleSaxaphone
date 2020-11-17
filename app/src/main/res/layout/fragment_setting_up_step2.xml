@@ -42,7 +42,7 @@
         android:gravity="center"
         android:text="Insert mouth piece on the neck until half of the cork is visible. Flat side of mouth piece should face down."
         android:textColor="#000000"
-        android:textSize="27sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
