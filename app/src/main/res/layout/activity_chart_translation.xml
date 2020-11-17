@@ -15,7 +15,7 @@
         android:text="Fingering Chart"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="55sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
