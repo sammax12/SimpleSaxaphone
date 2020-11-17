@@ -30,8 +30,7 @@ public class Home extends AppCompatActivity {
         chartbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, FragmentDisplay.class);
-                intent.putExtra("id", "chartFragmentSection");
+                Intent intent = new Intent(Home.this, ChartTranslation.class);
                 startActivity(intent);
             }
         });
