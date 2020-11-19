@@ -3,10 +3,8 @@ package com.example.simplesaxaphone;
 import android.media.MediaPlayer;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-
-public class PlayMedia extends AppCompatActivity {
+public class PlayMedia{
     private MediaPlayer player;
     public int song;
 

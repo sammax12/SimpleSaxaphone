@@ -11,15 +11,16 @@ import com.example.simplesaxaphone.R;
 
 public class ChartButtons extends Fragment implements View.OnClickListener{
     private View view;
+    private FragmentDisplay fDisplay;
     private Button C_btn, Csharp_btn, D_btn, Dsharp_btn, E_btn, F_btn, Fsharp_btn, G_btn, Gsharp_btn, A_btn, Asharp_btn, B_btn, C_high_btn;
     private ImageButton forwardArrow_btn;
 
-    public ChartButtons(View view){
+    public ChartButtons(View view, FragmentDisplay fDisplay){
         this.view = view;
-        createButtons();
+        this.fDisplay = fDisplay;
     }
 
-    public void createButtons() {
+    public View createButtons() {
         C_btn = (Button) view.findViewById(R.id.C_btn);
         C_btn.setOnClickListener(this);
 
@@ -61,53 +62,56 @@ public class ChartButtons extends Fragment implements View.OnClickListener{
 
         forwardArrow_btn = (ImageButton) view.findViewById(R.id.forwardArrow_btn);
         forwardArrow_btn.setOnClickListener(this);
+
+        return view;
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.C_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(0);
+                fDisplay.setViewPager(0);
                 break;
             case R.id.Csharp_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(1);
+                fDisplay.setViewPager(1);
                 break;
             case R.id.D_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(2);
+                fDisplay.setViewPager(2);
                 break;
             case R.id.Dsharp_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(3);
+                fDisplay.setViewPager(3);
                 break;
             case R.id.E_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(4);
+                fDisplay.setViewPager(4);
                 break;
             case R.id.F_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(5);
+                fDisplay.setViewPager(5);
                 break;
             case R.id.Fsharp_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(6);
+                fDisplay.setViewPager(6);
                 break;
             case R.id.G_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(7);
+                fDisplay.setViewPager(7);
                 break;
             case R.id.Gsharp_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(8);
+                fDisplay.setViewPager(8);
                 break;
             case R.id.A_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(9);
+                fDisplay.setViewPager(9);
                 break;
             case R.id.Asharp_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(10);
+                fDisplay.setViewPager(10);
                 break;
             case R.id.B_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(11);
+                fDisplay.setViewPager(11);
                 break;
             case R.id.C_high_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(12);
+                fDisplay.setViewPager(12);
                 break;
             case R.id.forwardArrow_btn:
-                ((FragmentDisplay)getActivity()).setViewPager(13);
+                fDisplay.setViewPager(13);
                 break;
         }
     }
+
 }
