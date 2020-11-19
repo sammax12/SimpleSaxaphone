@@ -7,19 +7,31 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.example.simplesaxaphone.PlayMedia;
 import com.example.simplesaxaphone.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SampleSong5#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SampleSong5 extends Fragment {
+
+    private Button playBtn;
+    private PlayMedia music;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate( R.layout.fragment_sample_song5, container, false );
+        View view =  inflater.inflate( R.layout.fragment_sample_song5, container, false );
+
+        playBtn = (Button) view.findViewById(R.id.playBtn);
+        playBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                music = new PlayMedia(R.raw.wheels_on_the_bus);
+                music.play(v);
+            }
+        });
+
+        return view;
     }
 }
