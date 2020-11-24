@@ -61,5 +61,6 @@ public class LessonsMenu extends AppCompatActivity implements View.OnClickListen
         Intent intent = new Intent(LessonsMenu.this, FragmentDisplay.class);
         intent.putExtra("id", value);
         startActivity(intent);
+
     }
 }
