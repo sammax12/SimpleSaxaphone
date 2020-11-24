@@ -9,13 +9,13 @@ import androidx.fragment.app.Fragment;
 import com.example.simplesaxaphone.FragmentDisplay;
 import com.example.simplesaxaphone.R;
 
-public class ChartButtons extends Fragment implements View.OnClickListener{
+public class LowChartButtons extends Fragment implements View.OnClickListener{
     private View view;
     private FragmentDisplay fDisplay;
     private Button C_btn, Csharp_btn, D_btn, Dsharp_btn, E_btn, F_btn, Fsharp_btn, G_btn, Gsharp_btn, A_btn, Asharp_btn, B_btn, C_high_btn;
     private ImageButton forwardArrow_btn;
 
-    public ChartButtons(View view, FragmentDisplay fDisplay){
+    public LowChartButtons(View view, FragmentDisplay fDisplay){
         this.view = view;
         this.fDisplay = fDisplay;
     }
