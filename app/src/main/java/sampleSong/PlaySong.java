@@ -6,8 +6,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.simplesaxaphone.FragmentDisplay;
-import com.example.simplesaxaphone.PlayMedia;
 import com.example.simplesaxaphone.R;
 
 public class PlaySong extends AppCompatActivity {
