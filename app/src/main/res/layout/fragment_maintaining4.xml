@@ -8,7 +8,7 @@
     tools:context="mainTaining.Maintaining4">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/maintaining4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/maintaining4"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/maintaining4" />
 
     <TextView
         android:id="@+id/textView2"
@@ -40,7 +40,7 @@
         android:text="Once all parts are clean and dry, place parts into corresponding place in the saxophone case."
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/maintaining4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

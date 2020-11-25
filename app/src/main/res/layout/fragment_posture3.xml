@@ -8,7 +8,7 @@
     tools:context="posture.Posture3">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/posture3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/posture3"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/posture3" />
 
     <TextView
         android:id="@+id/textView2"
@@ -40,7 +40,7 @@
         android:text="Place your left thumb on the upper thumb rest and place your right thumb along the lower thumb rest."
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/posture3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

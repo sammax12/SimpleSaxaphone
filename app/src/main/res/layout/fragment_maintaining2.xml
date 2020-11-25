@@ -8,7 +8,7 @@
     tools:context="mainTaining.Maintaining2">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/maintaining2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/maintaining2"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/maintaining2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -40,7 +40,7 @@
         android:text="Remove neck and use a cloth with a weight to dry off the inside of the neck. Pull weight through the neck until cloth comes out."
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/maintaining2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

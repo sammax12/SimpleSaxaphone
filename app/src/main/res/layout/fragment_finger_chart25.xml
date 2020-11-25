@@ -8,7 +8,7 @@
     tools:context="fingerChart.FingerChart25">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/chart25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/chart25"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/chart25">
 
         <ImageButton
             android:id="@+id/backArrow_btn"
@@ -128,10 +128,10 @@
             android:id="@+id/B_btn"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FFD036"
             android:padding="0dp"
             android:text="B"
-            android:textSize="12sp"
-            android:backgroundTint="#FFD036"/>
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/C_high_btn"

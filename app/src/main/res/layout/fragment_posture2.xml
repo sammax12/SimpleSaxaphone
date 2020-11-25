@@ -8,7 +8,7 @@
     tools:context="posture.Posture2">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/posture2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/posture2"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/posture2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -40,7 +40,7 @@
         android:text="Position saxophone along the right side of you. Adjust neck strap, allowing the reed to touch your lower lip."
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/posture2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
