@@ -45,12 +45,32 @@ public class EspressoTest {
         Espresso.onView(withId(R.id.settingUp))
                 .perform(click());
 
+        Espresso.onView(withId(R.id.settingUp1))
+                .check(matches(isDisplayed()));
         Espresso.onView(Matchers.allOf(withId(R.id.continueBtn),isDisplayed())).perform(click());
+
+        Espresso.onView(withId(R.id.settingUp2))
+                .check(matches(isDisplayed()));
         Espresso.onView(Matchers.allOf(withId(R.id.continueBtn),isDisplayed())).perform(click());
+
+        Espresso.onView(withId(R.id.settingUp3))
+                .check(matches(isDisplayed()));
         Espresso.onView(Matchers.allOf(withId(R.id.continueBtn),isDisplayed())).perform(click());
+
+        Espresso.onView(withId(R.id.settingUp4))
+                .check(matches(isDisplayed()));
         Espresso.onView(Matchers.allOf(withId(R.id.continueBtn),isDisplayed())).perform(click());
+
+        Espresso.onView(withId(R.id.settingUp5))
+                .check(matches(isDisplayed()));
         Espresso.onView(Matchers.allOf(withId(R.id.continueBtn),isDisplayed())).perform(click());
+
+        Espresso.onView(withId(R.id.settingUp6))
+                .check(matches(isDisplayed()));
         Espresso.onView(Matchers.allOf(withId(R.id.continueBtn),isDisplayed())).perform(click());
+
+        Espresso.onView(withId(R.id.settingUp7))
+                .check(matches(isDisplayed()));
         Espresso.onView(Matchers.allOf(withId(R.id.finishBtn),isDisplayed())).perform(click());
 
         Espresso.onView(withId(R.id.settingUp))
