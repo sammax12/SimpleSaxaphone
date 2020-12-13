@@ -20,7 +20,7 @@ public class LinkAlertDialog {
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        context.startActivity( new Intent(android.content.Intent.ACTION_VIEW).setData(Uri.parse(url)));
+                        context.startActivity(new Intent(android.content.Intent.ACTION_VIEW).setData(Uri.parse(url)));
                     }
                 })
                 .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
