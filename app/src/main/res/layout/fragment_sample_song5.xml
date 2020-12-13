@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageView2"
         android:gravity="center"
-        android:text="For original sheet, please go to 8notes.com"
+        android:text="For original sheet, please go to"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/playBtn"
@@ -48,6 +48,21 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/click_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:gravity="center"
+        android:text="8notes.com"
+        android:textColor="#031CFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/playBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheelBusImage"
+        app:layout_constraintVertical_bias="0.78" />
 
     <Button
         android:id="@+id/playBtn"
