@@ -41,8 +41,11 @@ public class PlaySong extends AppCompatActivity {
                     stopPlayer();
                 }
             });
+            player.start();
         }
-        player.start();
+        else{
+            stopPlayer();
+        }
     }
 
     private void stopPlayer(){
@@ -50,12 +53,6 @@ public class PlaySong extends AppCompatActivity {
             player.release();
             player = null;
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        stopPlayer();
-        super.onBackPressed();
     }
 
     @Override

@@ -2,7 +2,7 @@
     <string name="app_name">Simple Saxaphone</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="to_link"> Are you sure you want to leave this app and head to the web browser?</string>
-    <string name="title">Too Web Browser</string>
+    <string name="title">To Web Browser</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
